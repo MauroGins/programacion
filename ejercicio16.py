@@ -8,13 +8,14 @@ si el usuario introduce el número 7, el algoritmo le responderá que
 
 num_introducido = int(input("Introduce un valor del 0-9: \n"))
 n= num_introducido
+
 def is_prime(n):
 
     if n <= 1:
 
         return False
 
-    for i in range(2, int(n**0.5) + 1):
+    for i in range(2, int(n**0.5) + 1):  #
 
         if n % i == 0:
 
@@ -32,3 +33,5 @@ if is_prime(n):
 else:
 
     print(f"El {n} no es un número primo")
+    
+    
